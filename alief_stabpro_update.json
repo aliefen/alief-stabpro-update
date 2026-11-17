@@ -1,0 +1,16 @@
+{
+ "product": "ALIEF_STABPRO",
+ "version": "3.0.28",
+ "date": "2026-10-24",
+ "notes": "ALIEF_STABPRO 3.0.28 - catatan rilis (18 November 2026)\nPT. Alief Energy Utama - Batam\n\nLisensi yang sudah ada TETAP BERLAKU - tidak perlu memasukkan lisensi lagi setelah update.\n\nBARU\n1. Freeboard calculation (ILLC 1966 / Protokol 1988 yang telah diamandemen) disempurnakan mengikuti koreksi class\n   atas hitungan WGM 9501 (JKCD977):\n   a. Pengurangan bangunan atas (Reg. 37): kapal tipe B memakai Table 37.1 yang sama dengan tipe A\n      (0 - 7 - 14 - 21 - 31 - 41 - 52 - 63 - 75,3 - 87,7 - 100 %). Sebelumnya dipakai dua garis ICLL 1966 lama\n      (line I / II). Tipe B dengan forecastle yang panjang efektifnya < 0,07 L: tidak ada pengurangan (Reg. 37(3)).\n      Dua garis lama tetap dapat dipilih di \"Superstructure deduction (Reg. 37)\".\n   b. Sheer credit (Reg. 38(12)): poop / forecastle yang lebih tinggi dari tinggi standar memberi kredit\n      s = y L' / 3 L yang dikurangkan dari rata-rata kekurangan sheer sebelum dikalikan (0,75 - S / 2L).\n      Sebelumnya kredit hanya ditambahkan ke ordinat ujung (pengaruhnya terlalu kecil).\n      Pilihan baru \"Sheer credit, excess height (Reg. 38(12))\": Applied (default) / Not applied.\n   c. Pembuktian WGM 9501: pengurangan bangunan atas -229 mm, kekurangan sheer 308 mm (257 mm setelah kredit),\n      freeboard musim panas 1510 mm, sarat maksimum 5499 mm, tinggi haluan minimum 3922 mm (Cwf 0,927)\n      = angka koreksi class (-229, 308, 1510, 5499, 3921).\n   PM 39 / 2016 tidak berubah.\n2. Kriteria Ro-Ro passenger dan Ro-Ro cargo: untuk kapal berbadan lebar dan lambung rendah, B/D >= 2,5\n   (Explanatory Notes 2008 IS Code, MSC.1/Circ.1281 butir 4.1), kriteria \"Angle of maximum GZ\" otomatis menjadi 15 deg\n   (bukan 25 deg), bersama syarat luas sampai sudut GZ maksimum >= 0,055 + 0,001 (30 - theta_max) m.rad.\n   B/D < 2,5: tetap 25 deg. Limiting KG ikut memakai batas ini. Parameter \"wide_auto\" (True / False) pada tabel\n   kriteria mematikan / menghidupkan otomatis ini; proyek Ro-Ro lama mendapatkannya otomatis.\n3. Update otomatis seperti ALIEF FEA PRO / CAD PRO / ELECTRIC PRO: sumber update bawaan setiap instalasi adalah\n   repositori GitHub resmi aliefen/alief-stabpro-update. Saat program dibuka (sekali sehari) versi baru ditawarkan\n   lewat kotak pesan, installer diunduh (boleh dalam beberapa bagian), SHA-256 diperiksa, dipasang, lalu program\n   dibuka kembali. Manifest dari repositori resmi diterima tanpa tanda tangan; sumber lain (folder, Google Drive,\n   alamat web lain) tetap harus manifest bertanda tangan PT. Alief Energy Utama.\n4. Panduan: bab 85.\n\nCATATAN HASIL\nHasil freeboard ILLC kapal tipe B yang mempunyai bangunan atas berubah dari 3.0.27 (tabel pengurang dan sheer credit).\nHasil lain (hidrostatik, KN, limiting KG non Ro-Ro, loading condition, damage) tidak berubah.\nKomputer dengan versi <= 3.0.27 perlu memasang 3.0.28 satu kali secara manual; setelah itu update berjalan otomatis.\n",
+ "installer": {
+  "parts": [
+   "ALIEF_STABPRO_Setup_3.0.28.exe.001",
+   "ALIEF_STABPRO_Setup_3.0.28.exe.002",
+   "ALIEF_STABPRO_Setup_3.0.28.exe.003",
+   "ALIEF_STABPRO_Setup_3.0.28.exe.004"
+  ],
+  "sha256": "86de2b2dcd33e83a73c6652a93cb6ae50420f45ee217580e6163dfc87b7e959a",
+  "size": 77499273
+ }
+}
