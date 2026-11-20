@@ -1,16 +1,16 @@
 {
  "product": "ALIEF_STABPRO",
- "version": "3.0.34",
+ "version": "3.0.35",
  "date": "2026-10-24",
- "notes": "ALIEF_STABPRO 3.0.34 - catatan rilis (20 November 2026)\nPT. Alief Energy Utama - Batam\n\nLisensi yang sudah ada TETAP BERLAKU - tidak perlu memasukkan lisensi lagi setelah update.\n\nPERBAIKAN - IMPOR MAXSURF: BURITAN DENGAN SKEG\n1. Masalah (300x90x18 FT Deck Cargo Barge H 016): setelah Import Maxsurf, model 3D di buritan berlubang, garis frame\n   dari AP sampai frame 15 kacau dan lines plan di station 0-2 tidak benar.\n2. Penyebab: desain memakai trimmed surfaces, sehingga model untuk gambar dibuat dari penampang hitungan Maxsurf. Di\n   daerah skeg, Maxsurf menyimpan kontur lambung dan kontur tiap skeg sebagai satu garis bersambung. Program lama\n   menyambung lambung dengan skeg ke lambung tanpa skeg titik demi titik, sehingga permukaan terpuntir dan putus.\n3. Sekarang pada setiap station bagian tipis yang menonjol dari badan (skeg, bar keel, box keel) dipisahkan: badan\n   disambung ke badan, skeg ke skeg, awal dan akhir skeg ditutup bidang rata.\n4. Yang diperbaiki: model 3D, frames, lines plan, Bonjean dan shell expansion.\n5. Hitungan TIDAK berubah: hidrostatik, KN, limiting KG dan stabilitas memakai penampang Maxsurf langsung.\n6. Proyek yang sudah diimpor tidak perlu diimpor ulang: buka di 3.0.34, modelnya dibuat ulang otomatis.\n7. Panduan: bab 91.\n\nBELUM\n- Garis luar skeg belum digambar pada tampak samping (frames dan sheer plan); garis frame sudah sampai dasar skeg.\n",
+ "notes": "ALIEF_STABPRO 3.0.35 - catatan rilis (20 November 2026)\nPT. Alief Energy Utama - Batam\n\nLisensi yang sudah ada TETAP BERLAKU - tidak perlu memasukkan lisensi lagi setelah update.\n\nBARU - DETERMINISTIC DAMAGE: ONE-COMPARTMENT STANDARD DAN SOLAS 2004 II-1 PART B REG. 8\n(mengikuti comment class IRS: one-compartment damage, between adjacent transverse watertight bulkheads only,\n criteria SOLAS 2004 Ch. II-1 Part B Section 2.3)\n1. Standard baru: \"SOLAS 2004 II-1 Part B Reg. 8 (passenger ship, SOLAS 90: one / two compartment)\".\n   Kriteria tahap akhir:\n   8.2.3.1 range >= 15 deg (boleh sampai 10 deg bila area dinaikkan 15/range)\n   8.2.3.2 area >= 0.015 m.rad dari theta_e sampai 22 deg (27 deg dua kompartemen) atau theta_f\n   8.2.3.3 GZ >= momen heeling / displacement + 0.04 m, minimum 0.10 m\n           (momen terbesar dari: penumpang di satu sisi, peluncuran survival craft, angin 120 N/m2)\n   8.6.1.1 genangan simetris: GM >= 0.05 m\n   8.6.1.2 oleng akhir <= 7 deg satu kompartemen (12 deg dua atau lebih)\n   8.6.2   margin line tidak tenggelam\n   Panjang kerusakan 3 m + 3 % L (maks. 11 m), penetrasi B/5, vertikal tanpa batas.\n2. Pengaturan baru \"Side damage extent\" (berlaku untuk semua standard):\n   - Rule damage box: seperti sebelumnya (kotak digeser, dua kompartemen bila melewati sekat);\n   - One compartment: kerusakan hanya di antara dua sekat melintang kedap yang berdekatan, satu kasus per kompartemen;\n   - Two adjacent compartments: ditambah setiap dua kompartemen berdekatan.\n3. \"Main transverse WT bulkheads\": kosong = otomatis dari batas kompartemen, atau diisi (m dari AP / Fr).\n   \"Bulkheads closer than the damage length count as one\" (aturan SOLAS) - sekat yang tidak dihitung dicatat di laporan.\n4. \"Persons\" dan \"Survival craft moment\" untuk momen heeling 8.2.3.3 (0 orang = N1 + N2 halaman probabilistic).\n5. Laporan: penjelasan regulasi, tabel kriteria, daftar sekat dan gambar kriteria untuk standard ini.\n6. Panduan: bab 92.\n\nBELUM\n- Tahap antara (intermediate stages, Reg. 8.2.4 dan 8.5) belum dihitung.\n- Bila ada manual damage case dengan batas x aft / x fwd, kasus manual itu yang dipakai (seperti sebelumnya).\n- Proyek lama tidak berubah: pengaturan baru hanya aktif bila dipilih.\n",
  "installer": {
   "parts": [
-   "ALIEF_STABPRO_Setup_3.0.34.exe.001",
-   "ALIEF_STABPRO_Setup_3.0.34.exe.002",
-   "ALIEF_STABPRO_Setup_3.0.34.exe.003",
-   "ALIEF_STABPRO_Setup_3.0.34.exe.004"
+   "ALIEF_STABPRO_Setup_3.0.35.exe.001",
+   "ALIEF_STABPRO_Setup_3.0.35.exe.002",
+   "ALIEF_STABPRO_Setup_3.0.35.exe.003",
+   "ALIEF_STABPRO_Setup_3.0.35.exe.004"
   ],
-  "sha256": "9741978ff7518acfbfc09b896a03a9a76b79f04c2f594eeb4d6d71b99768755a",
-  "size": 80410286
+  "sha256": "80e546ddd2c7fcf3c607085aad60cc168b5e307912f18d1fae45b81a79fed59f",
+  "size": 80416762
  }
 }
