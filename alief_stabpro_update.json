@@ -1,16 +1,16 @@
 {
  "product": "ALIEF_STABPRO",
- "version": "3.0.33",
+ "version": "3.0.34",
  "date": "2026-10-24",
- "notes": "ALIEF_STABPRO 3.0.33 - catatan rilis (19 November 2026)\nPT. Alief Energy Utama - Batam\n\nLisensi yang sudah ada TETAP BERLAKU - tidak perlu memasukkan lisensi lagi setelah update.\n\nPERBAIKAN - UPDATE DARI APLIKASI\n1. Masalah: saat \"Download and install\" muncul jendela hitam (Windows Terminal) berjudul find \"<angka>\" berulang-ulang\n   dan versi baru tidak terpasang.\n   Penyebab: (a) program tidak benar-benar tertutup - pertanyaan \"The project has unsaved changes\" muncul di belakang\n   jendela hitam; (b) skrip penunggu membuka jendela konsol baru untuk setiap langkahnya; (c) installer akhirnya\n   dijalankan saat program masih terbuka, sehingga file program terkunci.\n2. Sekarang, sebelum program menutup untuk update:\n   - proyek yang belum disimpan: Save / Discard / Cancel;\n   - hitungan yang sedang berjalan: ditawarkan untuk dibatalkan, update menunggu sampai hitungan berhenti;\n   - jendela ALIEF_STABPRO lain yang terbuka di komputer ini: Retry (setelah ditutup) / Close them / Cancel.\n   Setelah itu program menutup tanpa pertanyaan lagi dan proses pasti berakhir.\n3. Skrip update berjalan TANPA jendela. Program yang belum tertutup setelah +/-20 detik diakhiri paksa. Setiap langkah\n   dicatat di %TEMP%\\ALIEF_STABPRO_update\\update.log.\n4. Installer tidak pernah memasang di atas program yang masih terbuka. Pada update dari aplikasi ia menutup sisa program\n   sendiri. Bila dipasang dengan tangan ia bertanya Retry / Ignore (tutup program) / Abort. Bila program tidak bisa\n   ditutup, tidak ada file yang diganti.\n5. Setelah update, program terbuka lagi dengan proyek yang tadi terbuka dan menampilkan \"Update installed - ALIEF_STABPRO\n   3.0.33 is running now\". Bila update tidak selesai, muncul pesan berisi isi update.log dan tombol \"Run the installer now\".\n6. Panduan: bab 90.\n\nCATATAN - SATU KALI DARI 3.0.31 / 3.0.32 KE 3.0.33\n- Skrip penunggu yang dipakai kali ini masih berasal dari versi lama. Simpan proyek (Save) dulu, baru tekan \"Download and\n  install\". Bila muncul pertanyaan \"The project has unsaved changes\", jawab Save atau Discard. Jendela hitam bisa\n  berkedip beberapa detik, lalu update berjalan.\n- Bila jendela hitam terus muncul, tunggu +/-4 menit (installer 3.0.33 menutup program sendiri), atau pasang 3.0.33\n  sekali secara manual (GABUNG_DAN_INSTAL.bat).\n- Mulai 3.0.33 update berikutnya berjalan tanpa jendela hitam.\n- Hasil hitungan tidak berubah dari 3.0.32.\n",
+ "notes": "ALIEF_STABPRO 3.0.34 - catatan rilis (20 November 2026)\nPT. Alief Energy Utama - Batam\n\nLisensi yang sudah ada TETAP BERLAKU - tidak perlu memasukkan lisensi lagi setelah update.\n\nPERBAIKAN - IMPOR MAXSURF: BURITAN DENGAN SKEG\n1. Masalah (300x90x18 FT Deck Cargo Barge H 016): setelah Import Maxsurf, model 3D di buritan berlubang, garis frame\n   dari AP sampai frame 15 kacau dan lines plan di station 0-2 tidak benar.\n2. Penyebab: desain memakai trimmed surfaces, sehingga model untuk gambar dibuat dari penampang hitungan Maxsurf. Di\n   daerah skeg, Maxsurf menyimpan kontur lambung dan kontur tiap skeg sebagai satu garis bersambung. Program lama\n   menyambung lambung dengan skeg ke lambung tanpa skeg titik demi titik, sehingga permukaan terpuntir dan putus.\n3. Sekarang pada setiap station bagian tipis yang menonjol dari badan (skeg, bar keel, box keel) dipisahkan: badan\n   disambung ke badan, skeg ke skeg, awal dan akhir skeg ditutup bidang rata.\n4. Yang diperbaiki: model 3D, frames, lines plan, Bonjean dan shell expansion.\n5. Hitungan TIDAK berubah: hidrostatik, KN, limiting KG dan stabilitas memakai penampang Maxsurf langsung.\n6. Proyek yang sudah diimpor tidak perlu diimpor ulang: buka di 3.0.34, modelnya dibuat ulang otomatis.\n7. Panduan: bab 91.\n\nBELUM\n- Garis luar skeg belum digambar pada tampak samping (frames dan sheer plan); garis frame sudah sampai dasar skeg.\n",
  "installer": {
   "parts": [
-   "ALIEF_STABPRO_Setup_3.0.33.exe.001",
-   "ALIEF_STABPRO_Setup_3.0.33.exe.002",
-   "ALIEF_STABPRO_Setup_3.0.33.exe.003",
-   "ALIEF_STABPRO_Setup_3.0.33.exe.004"
+   "ALIEF_STABPRO_Setup_3.0.34.exe.001",
+   "ALIEF_STABPRO_Setup_3.0.34.exe.002",
+   "ALIEF_STABPRO_Setup_3.0.34.exe.003",
+   "ALIEF_STABPRO_Setup_3.0.34.exe.004"
   ],
-  "sha256": "fbfb44c537a2f0f49949c1dfd7ef8babc45b6cb7d8eb493bd8ab993676b5e01f",
-  "size": 80393302
+  "sha256": "9741978ff7518acfbfc09b896a03a9a76b79f04c2f594eeb4d6d71b99768755a",
+  "size": 80410286
  }
 }
