@@ -1,16 +1,16 @@
 {
  "product": "ALIEF_STABPRO",
- "version": "3.0.36",
+ "version": "3.0.37",
  "date": "2026-10-24",
- "notes": "ALIEF_STABPRO 3.0.36 - catatan rilis (21 November 2026)\nPT. Alief Energy Utama - Batam\n\nLisensi yang sudah ada TETAP BERLAKU - tidak perlu memasukkan lisensi lagi setelah update.\n\nBARU - DETERMINISTIC DAMAGE UNTUK KAPAL BERNOTASI RO-RO CARGO\n1. Standard baru: \"SOLAS 2004 II-1 Part B Reg. 8.2.3 applied to a Ro-Ro cargo ship (class requirement, one compartment)\".\n   Untuk comment class: one-compartment damage, between adjacent transverse watertight bulkheads only, criteria\n   SOLAS 2004 Ch. II-1 Part B Section 2.3 - pada kapal yang dikelaskan Ro-Ro Cargo.\n2. Kriteria sama dengan 3.0.35: range >= 15 deg, area >= 0.015 m.rad sampai 22 deg atau theta_f, GZ >= momen heeling /\n   displacement + 0.04 m (minimum 0.10 m), GM >= 0.05 m (genangan simetris), oleng <= 7 deg, margin line tidak tenggelam.\n   Side damage extent otomatis \"One compartment\".\n3. Bedanya dengan standard kapal penumpang: momen penumpang TIDAK dipakai selama Persons = 0. Isi Persons bila class\n   meminta crew / penumpang (maks. 12) ikut dihitung. Momen angin 120 N/m2 dan survival craft tetap dipakai.\n4. Laporan menyebut dasar perhitungan: kapal Ro-Ro cargo, kriteria Reg. 8 paragraf 2.3 dipakai atas persyaratan\n   klasifikasi (SOLAS sendiri mensyaratkannya hanya untuk kapal penumpang).\n5. Panduan: bab 93.\n\nBELUM\n- Tahap antara (intermediate stages, Reg. 8.2.4 dan 8.5) belum dihitung.\n- Hasil hitungan proyek lama tidak berubah.\n",
+ "notes": "ALIEF_STABPRO 3.0.37 - catatan rilis (21 November 2026)\nPT. Alief Energy Utama - Batam\n\nLisensi yang sudah ada TETAP BERLAKU - tidak perlu memasukkan lisensi lagi setelah update.\n\nLAPORAN DAMAGE STABILITY\n1. Tabel ringkasan damage case: nama Loading condition hanya ditulis pada baris pertamanya; baris berikutnya kosong\n   bila sama dengan baris di atasnya.\n2. Tabel \"Standard applied and assumed extent of damage\": kolom nilai (kolom 2) lebih sempit daripada kolom\n   keterangan (kolom 3), sehingga tabel lebih pendek dan rapi.\n3. Bab baru \"How to use this damage stability booklet\" (Word dan Excel, setelah Applied regulations):\n   - prosedur enam langkah dengan diagram alir dan tabel letak datanya di booklet;\n   - cara membaca satu damage case: ilustrasi penampang kapal bocor (heel, margin line, bukaan, GZ), tabel besaran,\n     kurva GZ sisa dan tabel kolom ringkasan sesuai rule yang dipakai;\n   - result matrix damage case x loading condition (status dan sudut oleng) dengan grafik oleng terbesar dan\n     freeboard terkecil per damage case;\n   - tindakan setelah kebocoran, syarat agar booklet tetap berlaku, dan damage record form untuk diisi di kapal.\n4. PM 44/2021 - bukaan tidak kedap tidak tenggelam pada keseimbangan akhir: kriteria ini SUDAH ADA (kode 28(2)a untuk\n   Pasal 28 dan PM44.3 untuk Pasal 6 & 7), dengan penjelasan dan ilustrasi pada model kapal di bab Applied\n   regulations. Tidak diubah.\n5. Panduan: bab 94.\n\n- Hasil hitungan tidak berubah.\n",
  "installer": {
   "parts": [
-   "ALIEF_STABPRO_Setup_3.0.36.exe.001",
-   "ALIEF_STABPRO_Setup_3.0.36.exe.002",
-   "ALIEF_STABPRO_Setup_3.0.36.exe.003",
-   "ALIEF_STABPRO_Setup_3.0.36.exe.004"
+   "ALIEF_STABPRO_Setup_3.0.37.exe.001",
+   "ALIEF_STABPRO_Setup_3.0.37.exe.002",
+   "ALIEF_STABPRO_Setup_3.0.37.exe.003",
+   "ALIEF_STABPRO_Setup_3.0.37.exe.004"
   ],
-  "sha256": "83c13443c5a83dadf942530a57f48545fca9a6f554e7d80015201cd9833b12ec",
-  "size": 80410093
+  "sha256": "4941ef5689d3ca84b46f23a3f45c444ef8f99042654dd42edfe26e018709e737",
+  "size": 80611095
  }
 }
