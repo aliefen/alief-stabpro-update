@@ -1,16 +1,16 @@
 {
  "product": "ALIEF_STABPRO",
- "version": "3.0.42",
+ "version": "3.0.43",
  "date": "2026-10-24",
- "notes": "ALIEF_STABPRO 3.0.42 - catatan rilis (25 November 2026)\nPT. Alief Energy Utama - Batam\n\nLisensi yang sudah ada TETAP BERLAKU - tidak perlu memasukkan lisensi lagi setelah update.\n\nINCLINING TEST PROCEDURE\n1. PENDULUM BERDIRI DI DECK\n   - Bak oli dan mistar baca di deck pada centre line (bukan di atas bulwark), di deck tertinggi model pada\n     posisi itu; titik gantung setinggi panjang pendulum di atas deck, pada tiang (stand).\n2. INCLINING TEST ARRANGEMENT (DXF dan lampiran laporan)\n   - W1 .. Wn (posisi awal diarsir, setelah digeser putus-putus, panah geser), pendulum dengan tiangnya,\n     titik baca sarat, daftar material, legenda.\n   - DETAIL PENDULUM digambar besar (tidak berskala, tiang dan kawat diberi tanda potong): tiang pipa,\n     lengan, eye lug, kawat, bandul bersirip, bak oli, mistar, simpangan ke tiap sisi, ukuran L, nomor part.\n   - Bila DXF General Arrangement dipilih tetapi posisi kapal belum di-pick (\"Pick the ship's axes on the\n     drawing\"), arrangement digambar pada profil dan deck plan model lambung - tidak lagi di titik nol\n     gambar - dan catatannya tertulis di lampiran.\n3. BERAT KAPAL SAAT UJI\n   - \"Ship weight at the test\": Automatic (lightship perkiraan halaman 8 + item uji) atau Entered by hand\n     (W, LCG dari AP, TCG, VCG).\n   - Program menambahkan beban W1 .. Wn pada posisi awalnya dan berat set pendulum (\"Mass of one pendulum\n     set\", default 0.10 t), lalu menghitung equilibrium: displacement, sarat, trim, kemiringan awal, GM.\n   - Laporan: tabel berat kondisi uji dan hasil equilibrium; pemeriksaan kemiringan awal <= 0.5 deg.\n4. LCG, TCG, VCG TIAP BEBAN\n   - Tabel W1 .. Wn (beban padat): kolom LCG (dari AP), TCG (dari centre line di posisi awal), VCG.\n     Abu-abu = otomatis; ketik nilai untuk mengatur sendiri, kosongkan untuk kembali otomatis. d = 2 x TCG.\n5. Panduan: bab 99.",
+ "notes": "ALIEF_STABPRO 3.0.43 - catatan rilis (25 November 2026)\nPT. Alief Energy Utama - Batam\n\nLisensi yang sudah ada TETAP BERLAKU - tidak perlu memasukkan lisensi lagi setelah update.\n\nINCLINING TEST PROCEDURE - POSISI DENGAN NOMOR FRAME\n1. Tabel W1 .. Wn, kolom \"LCG (m / Fr)\": isi meter dari AP atau frame - Fr25, Fr25+0.300 (m), Fr25-300 (mm).\n   Tooltip sel menunjukkan nilainya dalam meter.\n2. \"Pendulum x from AP\": sama, dipisah koma, mis.  Fr6, Fr44+0.300\n3. Referensi frame disimpan di proyek: posisi ikut berubah bila tabel frame (halaman 2) diubah.\n4. Panduan: bab 100.",
  "installer": {
   "parts": [
-   "ALIEF_STABPRO_Setup_3.0.42.exe.001",
-   "ALIEF_STABPRO_Setup_3.0.42.exe.002",
-   "ALIEF_STABPRO_Setup_3.0.42.exe.003",
-   "ALIEF_STABPRO_Setup_3.0.42.exe.004"
+   "ALIEF_STABPRO_Setup_3.0.43.exe.001",
+   "ALIEF_STABPRO_Setup_3.0.43.exe.002",
+   "ALIEF_STABPRO_Setup_3.0.43.exe.003",
+   "ALIEF_STABPRO_Setup_3.0.43.exe.004"
   ],
-  "sha256": "c278341a9735a11ef358ded33311a95bca83ce011fe72eeee3be38597e7507f6",
-  "size": 81700127
+  "sha256": "049c7ff4a0900b9dffb258be1a285abc4a5e9b08b9603d8c5212d3cab1e7e860",
+  "size": 81705955
  }
 }
