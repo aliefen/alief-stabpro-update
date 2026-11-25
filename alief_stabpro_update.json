@@ -1,16 +1,16 @@
 {
  "product": "ALIEF_STABPRO",
- "version": "3.0.38",
+ "version": "3.0.39",
  "date": "2026-10-24",
- "notes": "ALIEF_STABPRO 3.0.38 - catatan rilis (24 November 2026)\nPT. Alief Energy Utama - Batam\n\nLisensi yang sudah ada TETAP BERLAKU - tidak perlu memasukkan lisensi lagi setelah update.\n\n1. DRAFT MARK MENGIKUTI KONTUR LINGGI (HALUAN / BURITAN)\n   - Halaman 2 Hull model, tab Draft marks: centang \"FWD marks along the stem contour\" (dan / atau \"AFT marks along\n     the stern contour\") dan isi jaraknya (mm, diukur tegak lurus kontur; pada gambar Bapak: 100).\n   - Gambar draft mark: angka digambar sepanjang garis yang sejajar kontur linggi, skala sebenarnya, dengan ukuran\n     jaraknya. Laporan mendapat tabel setting-out (draft, x mark dari AP, frame, x kontur) untuk setiap angka.\n   - Draft survey, inclining test dan lightweight check: posisi x mark diambil pada garis itu sesuai draft yang\n     dibaca, lalu dikoreksi ke perpendicular seperti biasa.\n2. GAMBAR ILUSTRASI PENGISIAN\n   - Kriteria towing (self-tripping, tow-tripping, BKI Sec. 27): gambar profil dan penampang kapal pada titik tarik\n     dengan nomor setiap isian (LS, l, h, tinggi titik tarik, LLL, Ap, V, r, BP) dan nilai yang diisi - di tab\n     Ship-type criteria dan di laporan Intact Stability (penjelasan kriteria).\n   - Green water: sketsa isian palka sekarang juga masuk ke laporan.\n   - Crane / A-frame: gambar \"Input guide - what to fill in\" di tab Crane / A-frame lifting dan di bab Lifting\n     operations pada laporan.\n3. Panduan: bab 95.\n\n- Hasil hitungan proyek lama tidak berubah (pengaturan baru hanya aktif bila dicentang).\n",
+ "notes": "ALIEF_STABPRO 3.0.39 - catatan rilis (25 November 2026)\nPT. Alief Energy Utama - Batam\n\nLisensi yang sudah ada TETAP BERLAKU - tidak perlu memasukkan lisensi lagi setelah update.\n\n1. LAPORAN BARU: INCLINING TEST PROCEDURE (Word dan Excel)\n   - Dokumen yang diserahkan ke klas SEBELUM inclining test, untuk beban padat (concrete block, baja) maupun\n     ballast water.\n   - Isi: pendahuluan; aturan yang dipakai (SOLAS II-1 Reg. 5, 2008 IS Code Part B Bab 8 dan Annex 1 termasuk\n     syarat ballast water 2.3.4, IACS Rec. 31, rules klas) dengan tabel persyaratan untuk kedua metode dan\n     perbandingannya; persiapan umum (dokumen, kondisi kapal, isi tangki, tambat, skala Beaufort); hitungan\n     berat beban dan ukuran blok; hitungan panjang pendulum; pemeriksaan set-up; urutan pergeseran dengan\n     prediksi kemiringan dan simpangan; langkah pelaksanaan A (persiapan) dan B (pelaksanaan); pemeriksaan\n     plot; personil; penundaan; ketelitian; isi laporan uji; daftar peralatan.\n   - Lampiran: Appendix 1 General Arrangement (PDF, DXF atau gambar), Appendix 2 Inclining Test Arrangement,\n     Appendix 3 formulir pencatatan dwibahasa (Form 1 - 6 dan tanda tangan).\n2. CARA MEMBUAT\n   - Halaman Draft survey & inclining, tab Inclining test: tombol \"Inclining test procedure...\".\n   - Tab Weights & pendulums: kemiringan target, jumlah beban (4 / 6), jarak geser, material dan density,\n     berat satu blok, jumlah dan posisi pendulum. Tekan \"Calculate weights and pendulums\".\n   - PANJANG PENDULUM: \"Automatic\" (pendulum di tab inclining, kalau kosong dihitung program) atau\n     \"Set by hand\" - isi panjang tiap pendulum, mis. 4.5, 3.0 (satu angka = semua pendulum). Simpangan dan\n     pemeriksaan 15 cm dihitung dengan panjang itu.\n   - Tab Drawings & arrangement: tambah file General Arrangement / gambar lain; pilih DXF General Arrangement,\n     lalu \"Pick the ship's axes on the drawing...\" dan klik 3 titik (AP di centre line deck plan, FP di centre\n     line deck plan, AP di base line profil).\n   - Tombol Word report / Excel report / Arrangement DXF. Laporan juga ada di halaman Report, Separate reports.\n3. RUMUS\n   - w = GM x D x tan(theta) / ((n/2) x d);  L pendulum = y / tan(theta), y = 150 mm ke tiap sisi.\n   - Kondisi uji (D, KM, GM) dari lightship PERKIRAAN (halaman 8) - nilai sebenarnya didapat dari uji.\n4. Panduan: bab 96.\n\nCATATAN\n- Nomor paragraf rules klas (BKI, RINA, BV, IRS, ABS, DNV, LR, NK, KR, CCS) ditulis per bab; mohon dicocokkan\n  dengan edisi rules klas yang berlaku sebelum dokumen diserahkan.\n- DXF General Arrangement yang besar (puluhan MB) perlu 1 - 2 menit untuk digambar.\n- Hasil hitungan proyek lama tidak berubah.",
  "installer": {
   "parts": [
-   "ALIEF_STABPRO_Setup_3.0.38.exe.001",
-   "ALIEF_STABPRO_Setup_3.0.38.exe.002",
-   "ALIEF_STABPRO_Setup_3.0.38.exe.003",
-   "ALIEF_STABPRO_Setup_3.0.38.exe.004"
+   "ALIEF_STABPRO_Setup_3.0.39.exe.001",
+   "ALIEF_STABPRO_Setup_3.0.39.exe.002",
+   "ALIEF_STABPRO_Setup_3.0.39.exe.003",
+   "ALIEF_STABPRO_Setup_3.0.39.exe.004"
   ],
-  "sha256": "1803e9ed21671c52c2fd34ddea0d9cc17257c165eaa53a20129a835870455e45",
-  "size": 80809164
+  "sha256": "37db6d9e022831daaa289da1144f6c2c220a1c1af9c9f1c450c28cbf1eedda39",
+  "size": 81121804
  }
 }
