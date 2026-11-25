@@ -1,16 +1,16 @@
 {
  "product": "ALIEF_STABPRO",
- "version": "3.0.40",
+ "version": "3.0.41",
  "date": "2026-10-24",
- "notes": "ALIEF_STABPRO 3.0.40 - catatan rilis (25 November 2026)\nPT. Alief Energy Utama - Batam\n\nLisensi yang sudah ada TETAP BERLAKU - tidak perlu memasukkan lisensi lagi setelah update.\n\n1. ILUSTRASI ISIAN KRITERIA LAIN (tab Ship-type criteria)\n   - Anchor handling (IS Code B 2.7), high speed craft (HSC Code Annex 7 / 8) dan containership > 100 m\n     (IS Code B 2.3): gambar \"what to fill in\" dengan nilai yang diisi, juga tercetak di laporan Intact.\n2. TAB CRITERIA LIMITS BARU\n   - Satu blok per kriteria (nomor, referensi aturan, nama, syarat); parameter dengan nama jelas dan\n     satuan. Hanya kolom Value (kuning) yang diisi; ya / tidak ditulis Yes / No.\n3. KAPAL LEBAR B/D >= 2.5 OTOMATIS UNTUK SEMUA JENIS KAPAL\n   - Bila B/D >= 2.5 dan set kriteria memuat \"sudut GZ maksimum >= 25 deg\" (A 2.2.3): otomatis menjadi\n     >= 15 deg dan ditambah luas sampai sudut GZ maksimum >= 0.055 + 0.001 (30 - theta_max) m.rad\n     (MSC.1/Circ.1281 4.1; sama dengan IS Code B 2.4.5 pada set Ro-Ro).\n   - Status B/D tampil di atas tabel. Centang \"Wide ship, B/D >= 2.5\" dapat dimatikan.\n   - PERHATIAN: proyek lama dengan B/D >= 2.5 dan kriteria umum akan mendapat kriteria ini saat dihitung\n     ulang (hasil status bisa berubah). Set pontoon / HSC / MODU tidak berubah.\n4. INCLINING TEST PROCEDURE\n   - \"Type of inclining weight\": dropdown Concrete blocks / Steel / Cast iron / Sand bags / Ballast water.\n     Aturan, langkah pelaksanaan, formulir dan gambar mengikuti pilihan.\n   - Tabel W1 .. Wn. Ballast water: pilih untuk tiap W tangki awal dan tangki seberang - bisa EMPAT\n     TANGKI BERBEDA untuk W1 - W4 supaya sounding tiap transfer terpisah. Lever d (jarak titik berat\n     tangki) langsung terisi. Semua baris \"(automatic)\" = satu pasang tangki usulan program.\n   - Berat: \"Automatic\" (estimasi untuk kemiringan target, tiap W) atau \"Set by hand\" (isi per W; tombol\n     \"Copy the estimate to 'By hand'\"). Kemiringan dan simpangan pendulum otomatis menyesuaikan.\n   - Pemeriksaan tambahan: beban awal separuh di tiap sisi; perubahan ballast terbesar di satu tangki\n     <= 45 % kapasitas.\n5. Panduan: bab 97.",
+ "notes": "ALIEF_STABPRO 3.0.41 - catatan rilis (25 November 2026)\nPT. Alief Energy Utama - Batam\n\nLisensi yang sudah ada TETAP BERLAKU - tidak perlu memasukkan lisensi lagi setelah update.\n\nATURAN KAPAL LEBAR B/D >= 2.5 (MSC.1/Circ.1281 4.1) DI LAPORAN INTACT\n1. Pilihan dipakai / tidak: halaman Stability criteria, kelompok \"Additional criteria\", centang\n   \"Wide ship B/D >= 2.5 - alternative criterion (MSC.1/Circ.1281 4.1)\" (sama dengan centang di tab Criteria\n   limits). Dicentang = dipakai dalam hitungan bila B/D >= 2.5; tidak dicentang = tidak dipakai (standar\n   25 deg) dan tidak tercetak. Di bawah centang tertulis apakah aturan sedang diterapkan pada kapal ini.\n2. Rule reference: bila dipakai, bab \"Applied regulations\" semua laporan Intact memuat baris aturan ini\n   dengan isinya; pernyataan regulasi di sampul / pendahuluan ikut menyebutnya.\n3. Penjelasan dan ilustrasi: bagian baru \"Ships of wide beam and small depth, B/D >= 2.5\" - latar belakang,\n   isi aturan, B, D dan B/D kapal, apa yang diterapkan; gambar penampang kapal biasa dan kapal lebar,\n   kurva GZ dengan batas 25 deg dan 15 deg serta luas sampai theta_max, bagan keputusan, grafik luas yang\n   disyaratkan, tabel standar vs alternatif.\n4. Set Ro-Ro: centang yang sama sekarang juga mengatur sudut 15 deg; kriteria luas B 2.4.5.2.1 tetap bagian\n   dari set Ro-Ro.\n5. Panduan: bab 98.",
  "installer": {
   "parts": [
-   "ALIEF_STABPRO_Setup_3.0.40.exe.001",
-   "ALIEF_STABPRO_Setup_3.0.40.exe.002",
-   "ALIEF_STABPRO_Setup_3.0.40.exe.003",
-   "ALIEF_STABPRO_Setup_3.0.40.exe.004"
+   "ALIEF_STABPRO_Setup_3.0.41.exe.001",
+   "ALIEF_STABPRO_Setup_3.0.41.exe.002",
+   "ALIEF_STABPRO_Setup_3.0.41.exe.003",
+   "ALIEF_STABPRO_Setup_3.0.41.exe.004"
   ],
-  "sha256": "1bfe81e1b2ce68bdba3d99ed25f3800f4194d9c5d8da3d7ed81546628c35f99c",
-  "size": 81568576
+  "sha256": "51fdb6aa7bbf4532d81de0128476647d5e27c8eeec39289e71d4744b66744226",
+  "size": 81644251
  }
 }
