@@ -1,16 +1,16 @@
 {
  "product": "ALIEF_STABPRO",
- "version": "3.0.41",
+ "version": "3.0.42",
  "date": "2026-10-24",
- "notes": "ALIEF_STABPRO 3.0.41 - catatan rilis (25 November 2026)\nPT. Alief Energy Utama - Batam\n\nLisensi yang sudah ada TETAP BERLAKU - tidak perlu memasukkan lisensi lagi setelah update.\n\nATURAN KAPAL LEBAR B/D >= 2.5 (MSC.1/Circ.1281 4.1) DI LAPORAN INTACT\n1. Pilihan dipakai / tidak: halaman Stability criteria, kelompok \"Additional criteria\", centang\n   \"Wide ship B/D >= 2.5 - alternative criterion (MSC.1/Circ.1281 4.1)\" (sama dengan centang di tab Criteria\n   limits). Dicentang = dipakai dalam hitungan bila B/D >= 2.5; tidak dicentang = tidak dipakai (standar\n   25 deg) dan tidak tercetak. Di bawah centang tertulis apakah aturan sedang diterapkan pada kapal ini.\n2. Rule reference: bila dipakai, bab \"Applied regulations\" semua laporan Intact memuat baris aturan ini\n   dengan isinya; pernyataan regulasi di sampul / pendahuluan ikut menyebutnya.\n3. Penjelasan dan ilustrasi: bagian baru \"Ships of wide beam and small depth, B/D >= 2.5\" - latar belakang,\n   isi aturan, B, D dan B/D kapal, apa yang diterapkan; gambar penampang kapal biasa dan kapal lebar,\n   kurva GZ dengan batas 25 deg dan 15 deg serta luas sampai theta_max, bagan keputusan, grafik luas yang\n   disyaratkan, tabel standar vs alternatif.\n4. Set Ro-Ro: centang yang sama sekarang juga mengatur sudut 15 deg; kriteria luas B 2.4.5.2.1 tetap bagian\n   dari set Ro-Ro.\n5. Panduan: bab 98.",
+ "notes": "ALIEF_STABPRO 3.0.42 - catatan rilis (25 November 2026)\nPT. Alief Energy Utama - Batam\n\nLisensi yang sudah ada TETAP BERLAKU - tidak perlu memasukkan lisensi lagi setelah update.\n\nINCLINING TEST PROCEDURE\n1. PENDULUM BERDIRI DI DECK\n   - Bak oli dan mistar baca di deck pada centre line (bukan di atas bulwark), di deck tertinggi model pada\n     posisi itu; titik gantung setinggi panjang pendulum di atas deck, pada tiang (stand).\n2. INCLINING TEST ARRANGEMENT (DXF dan lampiran laporan)\n   - W1 .. Wn (posisi awal diarsir, setelah digeser putus-putus, panah geser), pendulum dengan tiangnya,\n     titik baca sarat, daftar material, legenda.\n   - DETAIL PENDULUM digambar besar (tidak berskala, tiang dan kawat diberi tanda potong): tiang pipa,\n     lengan, eye lug, kawat, bandul bersirip, bak oli, mistar, simpangan ke tiap sisi, ukuran L, nomor part.\n   - Bila DXF General Arrangement dipilih tetapi posisi kapal belum di-pick (\"Pick the ship's axes on the\n     drawing\"), arrangement digambar pada profil dan deck plan model lambung - tidak lagi di titik nol\n     gambar - dan catatannya tertulis di lampiran.\n3. BERAT KAPAL SAAT UJI\n   - \"Ship weight at the test\": Automatic (lightship perkiraan halaman 8 + item uji) atau Entered by hand\n     (W, LCG dari AP, TCG, VCG).\n   - Program menambahkan beban W1 .. Wn pada posisi awalnya dan berat set pendulum (\"Mass of one pendulum\n     set\", default 0.10 t), lalu menghitung equilibrium: displacement, sarat, trim, kemiringan awal, GM.\n   - Laporan: tabel berat kondisi uji dan hasil equilibrium; pemeriksaan kemiringan awal <= 0.5 deg.\n4. LCG, TCG, VCG TIAP BEBAN\n   - Tabel W1 .. Wn (beban padat): kolom LCG (dari AP), TCG (dari centre line di posisi awal), VCG.\n     Abu-abu = otomatis; ketik nilai untuk mengatur sendiri, kosongkan untuk kembali otomatis. d = 2 x TCG.\n5. Panduan: bab 99.",
  "installer": {
   "parts": [
-   "ALIEF_STABPRO_Setup_3.0.41.exe.001",
-   "ALIEF_STABPRO_Setup_3.0.41.exe.002",
-   "ALIEF_STABPRO_Setup_3.0.41.exe.003",
-   "ALIEF_STABPRO_Setup_3.0.41.exe.004"
+   "ALIEF_STABPRO_Setup_3.0.42.exe.001",
+   "ALIEF_STABPRO_Setup_3.0.42.exe.002",
+   "ALIEF_STABPRO_Setup_3.0.42.exe.003",
+   "ALIEF_STABPRO_Setup_3.0.42.exe.004"
   ],
-  "sha256": "51fdb6aa7bbf4532d81de0128476647d5e27c8eeec39289e71d4744b66744226",
-  "size": 81644251
+  "sha256": "c278341a9735a11ef358ded33311a95bca83ce011fe72eeee3be38597e7507f6",
+  "size": 81700127
  }
 }
